@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background-color: rgb(232, 232, 79);
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #121212;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+  font-weight: 700;
+}
+
+/* About me section styles */
+.about-sec {
+  padding: 80px 0;
+  background-color: #1f1f1f;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6347;
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Projects section */
+.projects-section {
+  padding: 80px 0;
+  background-color: #121212;
+}
+
+.projects-section h2 {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff6347;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 48%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 1s linear;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: inset 0px 0px 20px #ff0202;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin: 20px 20px 10px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin: 0 20px 20px;
+  color: #cccccc;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 0 20px 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #e5533d;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+}
+
+/* contact section */
+.contact-section {
+  padding: 80px 0;
+  background-color: #1f1f1f;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff6347;
+}
+
+.contact-form {
+  width: 40rem;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff6347;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ff6347;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e5533d;
+}
+
+/* footer styles */
+.footer-section {
+  background-color: rgb(232, 232, 79);
+  font-style: oblique;
+  color: #121212;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  margin: 0;
+}
